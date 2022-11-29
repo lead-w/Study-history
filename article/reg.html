@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>正则 | NorthUnicorn</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/Study-history/assets/css/0.styles.e2241fa8.css" as="style"><link rel="preload" href="/Study-history/assets/js/app.a1ad6491.js" as="script"><link rel="preload" href="/Study-history/assets/js/16.9d7f8d82.js" as="script"><link rel="prefetch" href="/Study-history/assets/js/10.7e604d29.js"><link rel="prefetch" href="/Study-history/assets/js/11.3067a7ca.js"><link rel="prefetch" href="/Study-history/assets/js/12.d1a6fe69.js"><link rel="prefetch" href="/Study-history/assets/js/13.4864be39.js"><link rel="prefetch" href="/Study-history/assets/js/14.30636de0.js"><link rel="prefetch" href="/Study-history/assets/js/15.2bcbbae8.js"><link rel="prefetch" href="/Study-history/assets/js/17.0b328dfe.js"><link rel="prefetch" href="/Study-history/assets/js/18.f73ae9e0.js"><link rel="prefetch" href="/Study-history/assets/js/19.0e9a993e.js"><link rel="prefetch" href="/Study-history/assets/js/2.d8f505d4.js"><link rel="prefetch" href="/Study-history/assets/js/20.1a0bbb82.js"><link rel="prefetch" href="/Study-history/assets/js/21.23696e8c.js"><link rel="prefetch" href="/Study-history/assets/js/22.0c73380e.js"><link rel="prefetch" href="/Study-history/assets/js/23.c3ff09bc.js"><link rel="prefetch" href="/Study-history/assets/js/24.7933ac39.js"><link rel="prefetch" href="/Study-history/assets/js/25.c8ae28e2.js"><link rel="prefetch" href="/Study-history/assets/js/26.3736bb12.js"><link rel="prefetch" href="/Study-history/assets/js/27.97f3f560.js"><link rel="prefetch" href="/Study-history/assets/js/28.fa4268d5.js"><link rel="prefetch" href="/Study-history/assets/js/29.50a00a75.js"><link rel="prefetch" href="/Study-history/assets/js/3.8796f9d7.js"><link rel="prefetch" href="/Study-history/assets/js/30.25371944.js"><link rel="prefetch" href="/Study-history/assets/js/31.b1b8fd04.js"><link rel="prefetch" href="/Study-history/assets/js/32.f534b2b4.js"><link rel="prefetch" href="/Study-history/assets/js/33.b9e3298a.js"><link rel="prefetch" href="/Study-history/assets/js/34.8ac7105e.js"><link rel="prefetch" href="/Study-history/assets/js/35.ba4dfc73.js"><link rel="prefetch" href="/Study-history/assets/js/36.ef19edf1.js"><link rel="prefetch" href="/Study-history/assets/js/37.0f9caf07.js"><link rel="prefetch" href="/Study-history/assets/js/38.2e4a8c9a.js"><link rel="prefetch" href="/Study-history/assets/js/39.46f87030.js"><link rel="prefetch" href="/Study-history/assets/js/4.c59777f9.js"><link rel="prefetch" href="/Study-history/assets/js/40.e1794eae.js"><link rel="prefetch" href="/Study-history/assets/js/41.5507fc07.js"><link rel="prefetch" href="/Study-history/assets/js/42.caa5814b.js"><link rel="prefetch" href="/Study-history/assets/js/43.6cd8bb3f.js"><link rel="prefetch" href="/Study-history/assets/js/44.2442f75f.js"><link rel="prefetch" href="/Study-history/assets/js/45.9648c0bd.js"><link rel="prefetch" href="/Study-history/assets/js/46.de6e3a74.js"><link rel="prefetch" href="/Study-history/assets/js/47.72c2c6ba.js"><link rel="prefetch" href="/Study-history/assets/js/48.d5004b5b.js"><link rel="prefetch" href="/Study-history/assets/js/49.a2d1d664.js"><link rel="prefetch" href="/Study-history/assets/js/5.9b395665.js"><link rel="prefetch" href="/Study-history/assets/js/50.19b7d6c9.js"><link rel="prefetch" href="/Study-history/assets/js/51.a9a0da08.js"><link rel="prefetch" href="/Study-history/assets/js/52.e99771cc.js"><link rel="prefetch" href="/Study-history/assets/js/53.74e55a43.js"><link rel="prefetch" href="/Study-history/assets/js/54.c4ff7ebc.js"><link rel="prefetch" href="/Study-history/assets/js/55.acadfba7.js"><link rel="prefetch" href="/Study-history/assets/js/56.8fa49260.js"><link rel="prefetch" href="/Study-history/assets/js/57.08f5f4e4.js"><link rel="prefetch" href="/Study-history/assets/js/58.9d13dd4c.js"><link rel="prefetch" href="/Study-history/assets/js/6.d5fd31a3.js"><link rel="prefetch" href="/Study-history/assets/js/7.ec2eb6b8.js"><link rel="prefetch" href="/Study-history/assets/js/8.91dd34c9.js"><link rel="prefetch" href="/Study-history/assets/js/9.814e5587.js">
+    <link rel="stylesheet" href="/Study-history/assets/css/0.styles.e2241fa8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Study-history/" class="home-link router-link-active"><!----> <span class="site-name">NorthUnicorn</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Study-history/front/" class="nav-link">front</a></div><div class="nav-item"><a href="/Study-history/houduan/" class="nav-link">back</a></div><div class="nav-item"><a href="/Study-history/devOps/" class="nav-link">devOps</a></div><div class="nav-item"><a href="/Study-history/interview/" class="nav-link">interview</a></div><div class="nav-item"><a href="/Study-history/article/" class="nav-link router-link-active">article</a></div><div class="nav-item"><a href="https://github.com/songge7777" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Study-history/front/" class="nav-link">front</a></div><div class="nav-item"><a href="/Study-history/houduan/" class="nav-link">back</a></div><div class="nav-item"><a href="/Study-history/devOps/" class="nav-link">devOps</a></div><div class="nav-item"><a href="/Study-history/interview/" class="nav-link">interview</a></div><div class="nav-item"><a href="/Study-history/article/" class="nav-link router-link-active">article</a></div><div class="nav-item"><a href="https://github.com/songge7777" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>article</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/Study-history/article/webpack5.html" class="sidebar-link">webpack5 更新版本</a></li><li><a href="/Study-history/article/webpack.html" class="sidebar-link">webpack(基础)</a></li><li><a href="/Study-history/article/module.html" class="sidebar-link">module</a></li><li><a href="/Study-history/article/vueAnalysis.html" class="sidebar-link">vue</a></li><li><a href="/Study-history/article/vueN.html" class="sidebar-link">vue</a></li><li><a href="/Study-history/article/promise.html" class="sidebar-link">promise &amp;&amp; Event Loop</a></li><li><a href="/Study-history/article/frontModle.html" class="sidebar-link">发布订阅模式&amp;&amp;观察者模式</a></li><li><a href="/Study-history/article/vuePlugin.html" class="sidebar-link">vuePlugin</a></li><li><a href="/Study-history/article/jwtPrinciple.html" class="sidebar-link">jwt</a></li><li><a href="/Study-history/article/routerAuth.html" class="sidebar-link">routerAuth</a></li><li><a href="/Study-history/article/statusCode.html" class="sidebar-link">常用的状态码</a></li><li><a href="/Study-history/article/useLibrary.html" class="sidebar-link">常用库</a></li><li><a href="/Study-history/article/reg.html" class="active sidebar-link">正则</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Study-history/article/reg.html#创建-两种方式" class="sidebar-link">创建 两种方式</a></li><li class="sidebar-sub-header"><a href="/Study-history/article/reg.html#修饰符" class="sidebar-link">修饰符</a></li><li class="sidebar-sub-header"><a href="/Study-history/article/reg.html#转义字符" class="sidebar-link">转义字符</a></li><li class="sidebar-sub-header"><a href="/Study-history/article/reg.html#量词" class="sidebar-link">量词</a></li><li class="sidebar-sub-header"><a href="/Study-history/article/reg.html#正则属性" class="sidebar-link">正则属性</a></li><li class="sidebar-sub-header"><a href="/Study-history/article/reg.html#正则方法" class="sidebar-link">正则方法</a></li><li class="sidebar-sub-header"><a href="/Study-history/article/reg.html#字符串方法使用正则" class="sidebar-link">字符串方法使用正则</a></li><li class="sidebar-sub-header"><a href="/Study-history/article/reg.html#中括号" class="sidebar-link">中括号</a></li><li class="sidebar-sub-header"><a href="/Study-history/article/reg.html#量词种类" class="sidebar-link">量词种类</a></li><li class="sidebar-sub-header"><a href="/Study-history/article/reg.html#非捕获组" class="sidebar-link">非捕获组</a></li><li class="sidebar-sub-header"><a href="/Study-history/article/reg.html#" class="sidebar-link">?=</a></li></ul></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>vue</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/Study-history/article/vueSource.html" class="sidebar-link">vue source</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>axios</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/Study-history/article/axios.html" class="sidebar-link">axios</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>upload</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/Study-history/article/upload.html" class="sidebar-link">upload</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>binary</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/Study-history/article/binary.html" class="sidebar-link">二进制</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>http</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/Study-history/article/http.html" class="sidebar-link">http</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="正则"><a href="#正则" aria-hidden="true" class="header-anchor">#</a> 正则</h1> <p></p><div class="table-of-contents"><ul><li><a href="#创建-两种方式">创建 两种方式</a><ul><li><a href="#对比">对比</a></li></ul></li><li><a href="#修饰符">修饰符</a></li><li><a href="#转义字符">转义字符</a></li><li><a href="#量词">量词</a></li><li><a href="#正则属性">正则属性</a></li><li><a href="#正则方法">正则方法</a></li><li><a href="#字符串方法使用正则">字符串方法使用正则</a></li><li><a href="#中括号">中括号</a></li><li><a href="#量词种类">量词种类</a><ul><li><a href="#贪婪">贪婪</a></li></ul></li><li><a href="#非捕获组">非捕获组</a></li><li><a href="#">?=</a></li></ul></div><p></p> <h2 id="创建-两种方式"><a href="#创建-两种方式" aria-hidden="true" class="header-anchor">#</a> 创建 两种方式</h2> <ul><li>1、 直接量定义  /正则/修饰符</li> <li>2、 对象定义    new RegExp(字符串,修饰符)
+<ul><li>传递的是字符串,需要对特殊字符进行双重转义</li></ul></li></ul> <h3 id="对比"><a href="#对比" aria-hidden="true" class="header-anchor">#</a> 对比</h3> <div class="language-js extra-class"><pre class="language-js"><code>  字面量模式         等价的字符串
+  <span class="token operator">/</span>\<span class="token punctuation">[</span>bc\<span class="token punctuation">]</span>at<span class="token operator">/</span>  <span class="token operator">=&gt;</span>  <span class="token string">&quot;\\[bc\\]at&quot;</span>
+  <span class="token operator">/</span>\d<span class="token punctuation">.</span>\d<span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">}</span><span class="token operator">/</span>  <span class="token operator">=&gt;</span>  <span class="token string">&quot;\\d.\\d{1,2}&quot;</span>
+
+  <span class="token keyword">let</span> path <span class="token operator">=</span> <span class="token string">'/user/:uid/:name'</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> reg1 <span class="token operator">=</span> <span class="token regex">/\:\w+/g</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token parameter">reg<span class="token punctuation">.</span>source</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> \<span class="token punctuation">:</span>\w<span class="token operator">+</span>
+    
+  <span class="token comment">// 这里注意 \\w  我们要他的\  里所有的第一个\代表转义 最终我们要得到(\w) 所以就是\\  </span>
+  <span class="token keyword">let</span> reg2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RegExp</span><span class="token punctuation">(</span><span class="token string">'\:\\w+'</span><span class="token punctuation">,</span> <span class="token string">'g'</span><span class="token punctuation">)</span>
+
+</code></pre></div><h2 id="修饰符"><a href="#修饰符" aria-hidden="true" class="header-anchor">#</a> 修饰符</h2> <ul><li>常用的就i忽略大小写,g全局匹配</li></ul> <h2 id="转义字符"><a href="#转义字符" aria-hidden="true" class="header-anchor">#</a> 转义字符</h2> <div class="language-js extra-class"><pre class="language-js"><code>  \  转义符
+  \n <span class="token function">换行</span><span class="token punctuation">(</span>newline<span class="token punctuation">)</span>
+  \s <span class="token function">空格</span><span class="token punctuation">(</span>space<span class="token punctuation">)</span>
+  \<span class="token constant">S</span> 非空格
+  \' 单引号
+  \&quot; 双引号
+  \<span class="token function">d</span> <span class="token punctuation">(</span>digit<span class="token punctuation">)</span>数字<span class="token punctuation">,</span>正则中专门用来代表数字的<span class="token punctuation">,</span>等级于 <span class="token punctuation">[</span><span class="token number">0</span><span class="token operator">-</span><span class="token number">9</span><span class="token punctuation">]</span>
+  \<span class="token constant">D</span> 非数字字符<span class="token punctuation">,</span>等价于<span class="token punctuation">[</span><span class="token operator">^</span><span class="token number">0</span><span class="token operator">-</span><span class="token number">9</span><span class="token punctuation">]</span>
+  \w 数字、字母、下划线
+  \<span class="token constant">W</span> 非数字、非字母、非下划线
+  \b <span class="token function">单词的边界，独立的部分</span><span class="token punctuation">(</span>起始位子、结束位子、空格<span class="token punctuation">)</span><span class="token function">，它不匹配某个可见的字符，而是匹配位子</span><span class="token punctuation">(</span>border<span class="token punctuation">)</span>
+  \<span class="token constant">B</span> 非边界的部分
+  <span class="token punctuation">.</span>  任意一个字符
+  \<span class="token punctuation">.</span> 真正的点  匹配除\n换行以外的任意单字符  匹配包括\n在内的所有字符  <span class="token function">使用</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token operator">|</span>\n<span class="token punctuation">)</span>
+</code></pre></div><h2 id="量词"><a href="#量词" aria-hidden="true" class="header-anchor">#</a> 量词</h2> <div class="language-js extra-class"><pre class="language-js"><code>
+所有的量词都需要放在<span class="token punctuation">{</span>n<span class="token punctuation">,</span>m<span class="token punctuation">}</span>里面
+n<span class="token punctuation">,</span>m代表数字
+
+<span class="token punctuation">{</span>n<span class="token punctuation">}</span>     前一项重复n次
+<span class="token punctuation">{</span>n<span class="token punctuation">,</span><span class="token punctuation">}</span>    前一项至少重复n次，最多不限
+<span class="token punctuation">{</span>n<span class="token punctuation">,</span>m<span class="token punctuation">}</span>   前一项至少重复n次<span class="token punctuation">,</span>最多重复m次
+
+<span class="token operator">+</span>      前一项至少重复<span class="token number">1</span>次，最多不限     等价<span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token punctuation">}</span>
+？     前一项至少重复<span class="token number">0</span>次，最多重复<span class="token number">1</span>次，也就是说前一项是可选的，等价于<span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">}</span>
+<span class="token operator">*</span>      前一项至少重复<span class="token number">0</span>次，最多不限，也就是说前一项是可选的，等价<span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token punctuation">}</span>
+
+<span class="token operator">^</span>      它出现在中括号里代表排除的意思<span class="token punctuation">,</span>在中括号的外面标示字符串开始的位子
+$      字符串结束的位子
+
+</code></pre></div><h2 id="正则属性"><a href="#正则属性" aria-hidden="true" class="header-anchor">#</a> 正则属性</h2> <ul><li>正则对象的属性
+<ul><li>$n n代表()内匹配数据</li> <li>RegExp 对象上的方法  RegExp.$n
+<ul><li>在replace方法里用 RegExp.$1 匹配的都是最后一个 可以用 arguments[n] 获取,但是不要用箭头函数(无arguments)</li> <li>当正则 匹配后就可以用(不匹配拿不到) RegExp.$n 匹配分组的数据  n代表数字 1代表第一个分组</li></ul></li> <li></li></ul></li> <li>正则原型上的属性</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>  global 布尔值<span class="token punctuation">,</span>表示是否设置了g标志
+  ignoreCase 布尔值<span class="token punctuation">,</span>表示是否设置了i标志
+  lastIndex 整数<span class="token punctuation">,</span>表示开始搜索下一个匹配项的字符位置<span class="token punctuation">,</span><span class="token function">从0开始</span><span class="token punctuation">(</span>带g才有效果 不然每次都是从头开始<span class="token punctuation">)</span>
+  multiline 布尔值 表示是否设置了m表示
+  source 正则表达式的字符串表示
+  <span class="token keyword">var</span> pattern <span class="token operator">=</span> <span class="token regex">/\[bc\]at/i</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token parameter">pattern<span class="token punctuation">.</span>global</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token boolean">false</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token parameter">pattern<span class="token punctuation">.</span>ignoreCase</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token boolean">true</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token parameter">pattern<span class="token punctuation">.</span>multiline</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token boolean">false</span> 
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token parameter">pattern<span class="token punctuation">.</span>lastIndex</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token number">0</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token parameter">pattern<span class="token punctuation">.</span>source</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token string">&quot;\[bc\]at&quot;</span>
+</code></pre></div><h2 id="正则方法"><a href="#正则方法" aria-hidden="true" class="header-anchor">#</a> 正则方法</h2> <ul><li>匹配规则:默认前一项的结束是下一项的开始<div class="language-js extra-class"><pre class="language-js"><code>  exec 匹配内容
+    不带g
+      功能和match 是一样 第一个是匹配的内容 第二个是分组内容
+    带g
+      match 带g　返回的数组　全是匹配的内容　和不带g返回的　完全不一样
+      exec　要执行一次　和　不带是一样的　只会匹配到第一个　
+      <span class="token function">　　　再次　执行的时候　会匹配到第二个</span><span class="token punctuation">(</span>索引和匹配的内容　跟着变化<span class="token punctuation">)</span>，　他们返回的数据格式　和不带g是一样的
+    <span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">'/url1/:id/:name'</span>
+    <span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token regex">/\:([^\/]+)/g</span>
+    <span class="token keyword">let</span> a <span class="token operator">=</span> reg<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span>
+    <span class="token keyword">let</span> b <span class="token operator">=</span> reg<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span>
+  test
+    正则<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span>
+    返回布尔值
+</code></pre></div></li></ul> <h2 id="字符串方法使用正则"><a href="#字符串方法使用正则" aria-hidden="true" class="header-anchor">#</a> 字符串方法使用正则</h2> <ul><li>match 和 exec 主要是做匹配数据 replace 也可以匹配数据 但他主要是做替换</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>  match 匹配内容
+    不带g 返回数组 第一个是匹配的内容 第二个开始 <span class="token function">就是</span><span class="token punctuation">(</span><span class="token punctuation">)</span>内的匹配内容 index<span class="token operator">/</span>input等 以文本下标显示不占数字的length 
+          在使用数组方法的时候 文本下标 不会循环出来
+          小技巧<span class="token punctuation">:</span> 在多个分组的时候 索引从一开始到最后 全是分组内容
+      
+    带g   返回数组 里面全是匹配的内容
+    <span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">'/url1/:id/:name'</span>
+    <span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token regex">/\:([^\/]+)/</span>
+    <span class="token keyword">let</span> match <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>reg<span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>match<span class="token punctuation">)</span>
+  replace   
+    <span class="token function">函数接收的参数</span> <span class="token punctuation">(</span>返回替换后的内容<span class="token punctuation">,</span>原来的不变<span class="token punctuation">)</span> 
+      第一个是匹配到的内容 
+      <span class="token function">第二个是分组匹配的内容</span><span class="token punctuation">(</span>若多个分组 下面的索引往后靠<span class="token punctuation">,</span>要是没有就往前挪<span class="token punctuation">)</span>
+      第三个是索引
+      第死个是原字符串
+    <span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">'/url1/:id/:name'</span>
+    <span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token regex">/\:([^\/]+)/</span>
+    str<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>reg<span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">$<span class="token number">1</span><span class="token punctuation">,</span> $<span class="token number">2</span><span class="token punctuation">,</span> $<span class="token number">3</span><span class="token punctuation">,</span> $<span class="token number">4</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>$<span class="token number">1</span><span class="token punctuation">,</span> $<span class="token number">2</span><span class="token punctuation">,</span> $<span class="token number">3</span><span class="token punctuation">,</span> $<span class="token number">4</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  split 
+    用来切割字符串 将字符串转换成数组
+    第一个可以是字符串 也可以是 正则
+</code></pre></div><h2 id="中括号"><a href="#中括号" aria-hidden="true" class="header-anchor">#</a> 中括号</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">[</span><span class="token punctuation">]</span>              匹配中括号里的任意一个字符<span class="token punctuation">,</span>只代表一个字符
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token operator">-</span><span class="token number">9</span><span class="token punctuation">]</span>           区间的写法，标示从<span class="token number">1</span>到<span class="token number">9</span>之间的任意的一个字符
+<span class="token punctuation">[</span>a<span class="token operator">-</span>z<span class="token punctuation">]</span>           a<span class="token operator">-</span>z之间的任意一个小写字母
+<span class="token punctuation">[</span><span class="token constant">A</span><span class="token operator">-</span><span class="token constant">Z</span><span class="token punctuation">]</span>           <span class="token constant">A</span><span class="token operator">-</span><span class="token constant">Z</span>之间的任意一个大写字母 
+<span class="token punctuation">[</span>a<span class="token operator">-</span>zA<span class="token operator">-</span><span class="token constant">Z0</span><span class="token operator">-</span><span class="token number">9</span><span class="token punctuation">]</span>     匹配a<span class="token operator">-</span>z<span class="token punctuation">,</span><span class="token constant">A</span><span class="token operator">-</span><span class="token constant">Z</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token operator">-</span><span class="token number">9</span><span class="token punctuation">(</span>匹配任何字母和数字<span class="token punctuation">)</span>
+<span class="token operator">^</span>               <span class="token function">排除掉某个字符</span><span class="token punctuation">(</span>仅仅用在中括号内表达这个意思<span class="token punctuation">)</span>
+<span class="token punctuation">[</span>\u4e00<span class="token operator">-</span>\u9fa5<span class="token punctuation">]</span> 中文的区间<span class="token punctuation">,</span>包含所有的汉字
+
+red<span class="token operator">|</span>blue<span class="token operator">|</span>green 标示red<span class="token punctuation">,</span>blue<span class="token punctuation">,</span>green <span class="token function">这三个单词中的任何一个</span><span class="token punctuation">(</span>至少<span class="token punctuation">)</span>
+</code></pre></div><h2 id="量词种类"><a href="#量词种类" aria-hidden="true" class="header-anchor">#</a> 量词种类</h2> <h3 id="贪婪"><a href="#贪婪" aria-hidden="true" class="header-anchor">#</a> 贪婪</h3> <ul><li>尽量多的匹配
+<ul><li>?匹配0或者1个 贪婪模式先匹配1个 当1匹配不到的时候 在从上一次匹配的下一个位子开始 匹配0</li> <li>*匹配0或者至多个 规律同上</li> <li>+匹配1或者至多个 规律同上</li> <li>x{n,m} 和 x{n,} 同上</li></ul></li> <li>x?<div class="language-js extra-class"><pre class="language-js"><code>   aaa  a<span class="token operator">?</span><span class="token parameter">a</span> <span class="token operator">=&gt;</span> aa a
+</code></pre></div></li> <li>x*<div class="language-js extra-class"><pre class="language-js"><code>   aaa  a<span class="token operator">*</span><span class="token parameter">a</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span><span class="token string">'aaa'</span><span class="token punctuation">]</span>
+   aaa1a  a<span class="token operator">*</span><span class="token parameter">a</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span><span class="token string">'aaa'</span><span class="token punctuation">,</span><span class="token string">'a'</span><span class="token punctuation">]</span>  
+</code></pre></div></li> <li>x+<div class="language-js extra-class"><pre class="language-js"><code>   aaa  a<span class="token operator">+</span><span class="token parameter">a</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span><span class="token string">'aaa'</span><span class="token punctuation">]</span>
+   aaa1a  a<span class="token operator">+</span><span class="token parameter">a</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span><span class="token string">'aaa'</span><span class="token punctuation">]</span>
+   aaa1aa  a<span class="token operator">+</span><span class="token parameter">a</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span><span class="token string">'aaa'</span><span class="token punctuation">,</span><span class="token string">'aa'</span><span class="token punctuation">]</span>
+</code></pre></div></li></ul> <div class="language- extra-class"><pre class="language-text"><code>- x{n,m}  x{n,}
+  -  同上 例子就写了
+### 懒惰
+- 尽量少匹配
+- x??
+  ```js
+    aaa  a??a =&gt;  ['a','a','a']
+  ```
+- x*?
+  ```js
+    aaa a*?a =&gt; ['a','a','a']
+  ```
+- x+?
+  ```js
+    aaa a+?a =&gt; ['aa']
+  ```
+## 捕获组
+-  捕获组:使用括号作为单独的单元来对待的一种方式,可通过程序方便地拿到分组对应的匹配内容
+- (\d\d)\1 == (\d\d)\d\d  也就是说是一个ABAB形式的
+```js
+// 1、匹配连续出现的数字
+let str = 'aa1212ss'
+let rs = str.match(/(\d\d)\1/g)
+console.log(rs) =&gt; [1212]
+// 2、匹配html标签
+let str = '&lt;div id='ss'&gt;&lt;a&gt;123&lt;/a&gt;&lt;/div&gt;'
+let rs = str.match(/&lt;([a-z]+).+?&lt;\/\1&gt;/)
+console.log(rs)
+</code></pre></div><h2 id="非捕获组"><a href="#非捕获组" aria-hidden="true" class="header-anchor">#</a> 非捕获组</h2> <ul><li>分组括号里第一个是?就是非捕获组(不计算在分组内)</li> <li>好处 不会讲匹配到的字符存储在内存种 从而节省内存</li> <li>一般常用的就是 (?:xxx)</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">'ad123asd'</span>
+<span class="token keyword">let</span> rs <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex">/(?:\d)/</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>rs<span class="token punctuation">)</span> <span class="token comment">// 结果没有分组的内容 数组长度是1</span>
+</code></pre></div><h2 id><a href="#" aria-hidden="true" class="header-anchor">#</a> ?=</h2> <ul><li>前瞻 exp1(?=exp2) 查找exp2前面的exp1</li> <li>后顾 (?&lt;=exp2)exp1 查找exp2前面的exp1(js不支持)</li> <li>负前瞻 exp1(?exp2) 查找后面不是exp2的exp1</li> <li>负后瞻 (?&lt;!exp2)exp1 查找前面不是exp2的exp1(js不支持)</li></ul></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">11/7/2022, 8:03:51 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/Study-history/article/useLibrary.html" class="prev">
+          常用库
+        </a></span> <span class="next"><a href="/Study-history/article/vueSource.html">
+          vue source
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/Study-history/assets/js/app.a1ad6491.js" defer></script><script src="/Study-history/assets/js/16.9d7f8d82.js" defer></script>
+  </body>
+</html>
